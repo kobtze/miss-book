@@ -1,0 +1,25 @@
+.book-preview {
+    width: 150px;
+    height: 150px;
+    background-color: #dadada;
+    color: #424242;
+    border: 1px solid gray;
+    border-radius: 4px;
+    margin: 4px;
+}
+
+.book-preview h1, h2, h3, h4, h5, h6, p {
+    margin-top: 0;
+}
+
+.book-preview .book-title {
+    margin-top: 6px;
+}
+
+.book-preview .book-author {
+    margin-bottom: 10px;
+}
+
+.book-preview .book-price {
+    margin-bottom: 20px;
+}

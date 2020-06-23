@@ -1,0 +1,12 @@
+@import './helpers.css';
+@import './layout.css';
+
+/* CPMS */
+
+@import './cmps/book-list.css';
+@import './cmps/book-preview.css';
+
+
+.car-details {
+    background-color: red;
+}
