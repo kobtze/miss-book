@@ -1,7 +1,6 @@
 import {bookService} from '../services/book.service.js';
 
 export default {
-    // props: ['book'],
     template: `
         <section class="book-details">
             <button @click="close">X</button>
@@ -23,8 +22,7 @@ export default {
     },
     methods: {
         close() {
-            console.log('saving...');
-            this.$emit('close', null);
+            this.$router.push('/all-books')
         }
     }
 }

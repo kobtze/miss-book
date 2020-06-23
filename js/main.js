@@ -9,8 +9,8 @@ new Vue({
             <h1>Miss Book</h1>
             <nav>
                 <router-link to="/">Home</router-link> | 
-                <router-link to="/book">Book App</router-link> | 
-                <router-link to="/edit">Add book</router-link> |
+                <router-link to="/all-books">Book App</router-link> | 
+                <router-link to="/book/add">Add book</router-link> |
                 <router-link to="/about">About</router-link>
             </nav>
         </header>
@@ -19,7 +19,7 @@ new Vue({
             <router-view/>
         </main>
 
-        <footer>
+        <footer class="text-right">
             coffeerights 2020    
         </footer>  
 

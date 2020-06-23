@@ -75,13 +75,14 @@ export default {
                     currencyCode: 'ILS',
                     isOnSale: true
                  },
-            }
+            };
+            this.$router.push('/all-books')
         }
     },
-    created(){
-        const id = this.$route.params.bookId
-        const book = bookService.getBookById(id)
-            .then(book => this.bookToEdit = book)
-    }
+    // created(){
+    //     const id = this.$route.params.bookId
+    //     const book = bookService.getBookById(id)
+    //         .then(book => this.bookToEdit = book)
+    // }
 
 }

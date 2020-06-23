@@ -1,15 +1,16 @@
 'use strict';
-import {Utils} from './utils.service.js';
+import { Utils } from './utils.service.js';
 
 var gBooks = _createBooks();
 
 export const bookService = {
   getBooks,
   getBookById,
-  saveBook
+  saveBook,
+  saveGoogleBook
 }
 
-function _createBooks(){
+function _createBooks() {
   var books = Utils.loadFromStorage('books');
   if (!books || !books.length) {
     books = [
@@ -473,4 +474,21 @@ function saveBook(book) {
   gBooks.unshift(book);
   Utils.storeToStorage('books', gBooks);
   return Promise.resolve(book)
+}
+
+function saveGoogleBook(book) {
+  const currencyCodes = ['EUR', 'USD', 'ILS'];
+  var formattedBook = {
+    authors: book.volumeInfo.authors,
+    id: book.id,
+    title: book.volumeInfo.title,
+    listPrice: {
+      amount: Utils.getRandomInt(20, 200),
+      currencyCode: currencyCodes[Utils.getRandomInt(0, 2)]
+    }
+  };
+  console.log(formattedBook);
+  gBooks.unshift(formattedBook);
+  Utils.storeToStorage('books', gBooks);
+  return Promise.resolve(formattedBook)
 }

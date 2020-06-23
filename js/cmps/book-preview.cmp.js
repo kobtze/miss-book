@@ -10,8 +10,9 @@ export default {
                 {{book.price}} {{book.listPrice.amount}}{{book.listPrice.currencyCode}}
             </p>
             <p class="book-links">
-                <router-link :to="'/book/' + book.id">Details</router-link> | 
-                <router-link :to="'/book/edit/' + book.id">Edit</router-link>
+                <router-link :to="'/book/' + book.id">Details</router-link>
+                 <!-- |  -->
+                <!-- <router-link :to="'/book/edit/' + book.id">Edit</router-link> -->
             </p>
         </li>
     `,

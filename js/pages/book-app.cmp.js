@@ -1,14 +1,14 @@
 
 import bookFilter from '../cmps/book-filter.cmp.js'
 import bookList from '../cmps/book-list.cmp.js'
-import bookEdit from '../cmps/book-edit.cmp.js';
+import bookEdit from '../cmps/book-add-manually.cmp.js';
 
 import {bookService} from '../services/book.service.js'
 
 export default {
     template: `
     <main class="app-main book-app">
-        <router-link to ="/book/edit">New Book</router-link>
+        <router-link to ="/book/add+m">New Book</router-link>
         <book-filter @filtered="setFilter"/>
         <book-list :books="booksToShow"></book-list>
     </main>
@@ -38,6 +38,7 @@ export default {
         bookService.getBooks()
             .then(books => {
                 this.books = books;
+                console.log(books);
             })
     },
     methods: {

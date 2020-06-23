@@ -8,7 +8,7 @@ export default {
                 <img class="mx-150 rounded-circle team-member-pic" src="img/team/4.jpg" alt="">
             </div>
             <div>
-                <h1 @click="report">Kobi 'Kobtze' Donner</h1>
+                <h1>Kobi 'Kobtze' Donner</h1>
                 <p class="text-muted">Frontend Web Developer</p>
                 <p class="large text-muted  about-description">Curious, ambitious & tech-savvy individual with great English,
                 social and collaborative skills and thorough handson experience in web development looking to join an exciting R&D
