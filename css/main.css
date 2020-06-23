@@ -6,6 +6,9 @@
 @import './cmps/book-list.css';
 @import './cmps/book-preview.css';
 
+/* PAGES */
+
+@import './pages/about.css';
 
 .car-details {
     background-color: red;

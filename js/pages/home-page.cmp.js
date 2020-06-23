@@ -4,7 +4,7 @@ import {eventBus} from '../services/event-bus.service.js'
 export default {
     template: `
     <section class="home-page">
-        <h1 @click="report">Home </h1>
+        <p>Miss Book is a VueJS based app that allows CRUDL functionality for database of books.</p>
         
     </section>    
     

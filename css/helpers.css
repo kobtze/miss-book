@@ -31,6 +31,13 @@
 .justify-end {
     justify-content: flex-end;
 }
+.mx-150 {
+    max-width: 150px;
+    max-height: 150px;
+}
+.rounded-circle {
+    border-radius: 50%;
+  }
 
 
 
